@@ -103,8 +103,46 @@ objectList =
 	"Land_Canal_WallSmall_10m_F",
 	"Land_CncBarrierMedium4_F",
 	"Land_CncShelter_F",
+	"Land_Pod_Heli_Transport_04_ammo_F",
+	"Land_Pod_Heli_Transport_04_bench_F",
+	"Land_Pod_Heli_Transport_04_box_F",
+	"Land_Pod_Heli_Transport_04_covered_F",
+	"Land_Pod_Heli_Transport_04_fuel_F",
+	"Land_Pod_Heli_Transport_04_medevac_F",
+	"Land_Pod_Heli_Transport_04_repair_black_F",
+	"Land_Pod_Heli_Transport_04_ammo_black_F",
+	"Land_Pod_Heli_Transport_04_bench_black_F",
+	"Land_Pod_Heli_Transport_04_box_black_F",
+	"Land_Pod_Heli_Transport_04_covered_black_F",
+	"Land_Pod_Heli_Transport_04_fuel_black_F",
+	"Land_Pod_Heli_Transport_04_medevac_black_F",
+	"Land_Pod_Heli_Transport_04_repair_black_F",
 	"Land_CncWall4_F",
 	"Land_HBarrier_1_F",
+	"Land_Cargo40_blue_F",
+	"Land_Cargo40_brick_red_F",
+	"Land_Cargo40_cyan_F",
+	"Land_Cargo40_grey_F",
+	"Land_Cargo40_light_blue_F",
+	"Land_Cargo40_light_green_F",
+	"Land_Cargo40_military_green_F",
+	"Land_Cargo40_red_F",
+	"Land_Cargo40_orange_F",
+	"Land_Cargo40_sand_F",
+	"Land_Cargo40_white_F",
+	"Land_Cargo40_yellow_F",
+	"Land_Cargo20_blue_F",
+	"Land_Cargo20_brick_red_F",
+	"Land_Cargo20_cyan_F",
+	"Land_Cargo20_grey_F",
+	"Land_Cargo20_light_blue_F",
+	"Land_Cargo20_light_green_F",
+	"Land_Cargo20_military_green_F",
+	"Land_Cargo20_red_F",
+	"Land_Cargo20_orange_F",
+	"Land_Cargo20_sand_F",
+	"Land_Cargo20_white_F",
+	"Land_Cargo20_yellow_F",
 	"Land_HBarrier_3_F",
 	"Land_HBarrier_5_F",
 	"Land_HBarrier_5_F",
@@ -159,10 +197,10 @@ staticPlaneList =
 //Random Weapon List - Change this to what you want to spawn in cars.
 vehicleWeapons =
 [
-	"hgun_P07_F",
-	"hgun_Rook40_F",
-	"hgun_ACPC2_F",
-	"arifle_SDAR_F",
+//	"hgun_P07_F",
+//	"hgun_Rook40_F",
+//	"hgun_ACPC2_F",
+//	"arifle_SDAR_F",
 	"SMG_01_F",	// Vermin .45 ACP
 	"SMG_02_F",	// Sting 9mm
 	"hgun_PDW2000_F",
@@ -182,80 +220,66 @@ vehicleWeapons =
 	"arifle_MXM_F",
 	"srifle_EBR_F",
 	"LMG_Mk200_F",
-	"LMG_Zafir_F",
-	
-//	Additional standard weapons
-	"arifle_Mk20C_plain_F",
-	"arifle_Mk20_plain_F",
-	"arifle_Mk20_GL_plain_F",
-	"arifle_MXC_Black_F",
-	"arifle_MX_Black_F",
-	"arifle_MX_GL_Black_F",
-	"arifle_MXM_Black_F",
-	"srifle_DMR_01_F",
-	
-//	DLC weapons
-	"srifle_DMR_06_camo_F",
-	"srifle_DMR_06_olive_F",
-	"srifle_DMR_03_multicam_F",
-	"srifle_DMR_03_khaki_F",
-	"srifle_DMR_03_tan_F",
-	"srifle_DMR_03_woodland_F",
-	"srifle_DMR_03_F",
-	"srifle_DMR_02_F",
-	"srifle_DMR_02_camo_F",
-	"srifle_DMR_02_sniper_F",
-	"srifle_DMR_05_blk_F",
-	"srifle_DMR_05_hex_F",
-	"srifle_DMR_05_tan_f",
-	"srifle_DMR_04_F",
-	"srifle_DMR_04_Tan_F",
-	"MMG_02_black_F",
-	"MMG_02_camo_F",
-	"MMG_02_sand_F",
-	"MMG_01_hex_F",
-	"MMG_01_tan_F"
+	"LMG_Zafir_F"
 ];
 
 vehicleAddition =
 [
-//	"muzzle_snds_L", // 9mm
-//	"muzzle_snds_M", // 5.56mm
-//	"muzzle_snds_H", // 6.5mm
-//	"muzzle_snds_H_MG", // 6.5mm LMG
-//	"muzzle_snds_B", // 7.62mm
-//	"muzzle_snds_acp", // .45 ACP
-	"optic_Arco",
+	"muzzle_snds_L", // 9mm
+	"muzzle_snds_M", // 5.56mm
+	"muzzle_snds_H", // 6.5mm
+	"muzzle_snds_H_MG", // 6.5mm LMG
+	"muzzle_snds_B", // 7.62mm
+	"muzzle_snds_acp", // .45 ACP
+	"ACE_optic_Arco_2D",
+	"ACE_optic_Hamr_2D",
+	"ACE_optic_SOS_2D",
+	"ACE_optic_MRCO_2D",
+	"ACE_acc_pointer_red",
 	"optic_SOS",
-	"optic_Hamr",
 	"optic_Aco",
 	"optic_ACO_grn",
 	"optic_aco_smg",
 	"optic_Holosight",
 	"optic_Holosight_smg",
+	"ACE_DefusalKit",
+	"ACE_Clacker",
+	"ACE_M26_Clacker",
+	"ACE_HuntIR_monitor",
+	"ACE_TacticalLadder_Pack",
+	"ACE_Sandbag_empty",
+	"ACE_RangeCard",
+	"ACE_SpareBarrel",
+	"ACE_wirecutter",
+	"ACE_EarPlugs",
+	//"ACE_quikclot", //Advanced
+	//"ACE_fieldDressing", //Advanced
+	"acc_flashlight",
+	//"ACE_elasticBandage", //Advanced
+	//"ACE_tourniquet", //Advanced
+	"ACE_bodybag",
+	"ACE_MapTools",
+	//"ACRE_PRC77",
+	//"ACRE_PRC117F",
+	//"ACRE_PRC152",
 	"acc_flashlight",
 	"acc_pointer_IR",
 	"Medikit",
 	"Medikit",
 	"FirstAidKit",
-	"ToolKit",
-	
-//	DLC Items
-	"optic_AMS",
-	"optic_AMS_khk",
-	"optic_AMS_snd",
-	"optic_KHS_blk",
-	"optic_KHS_hex",
-	"optic_KHS_old",
-	"optic_KHS_tan"
+	"ToolKit"
 ];
 
 vehicleAddition2 =
 [
 	"Chemlight_blue",
 	"Chemlight_green",
+	"ACE_HandFlare_White",
+	"ACE_HandFlare_Red",
+	"ACE_HandFlare_Green",
+	"ACE_HuntIR_M203",
+	"ACE_HandFlare_Yellow",
+	"ACE_M84",
 	"Chemlight_yellow",
-	"Chemlight_red",
-	"MiniGrenade",
-	"HandGrenade"
+	"Chemlight_red"
 ];

@@ -70,7 +70,7 @@ if (!isNil "_getPublicVar" && !isNil "_isConfigOn") then
 					if (!isNull _display) then
 					{
 						(_display displayCtrl 104) ctrlEnable _this; // Abort
-						(_display displayCtrl 1010) ctrlEnable _this; // Respawn
+						(_display displayCtrl 1010) ctrlEnable (_this || _unconscious); // Respawn
 					};
 				};
 
@@ -79,27 +79,30 @@ if (!isNil "_getPublicVar" && !isNil "_isConfigOn") then
 					if (call _preventAbort) then
 					{
 						with missionNamespace do { [false] spawn fn_savePlayerData };
-						false call _enableButtons;
 
 						private ["_unconscious", "_timeStamp", "_text"];
+						_unconscious = player call _isUnconscious;
+
+						false call _enableButtons;
 
 						while {call _preventAbort} do
 						{
 							if (_unconscious) then
 							{
-								_text = "\n\n\n\nCannot wimp out during bleeding!";
+								_text = "\n\n\n\nCannot pussy out during bleeding!";
 							}
 							else
 							{
 								_time = with missionNamespace do { (_abortDelay - (diag_tickTime - _timeStamp)) call fn_formatTimer };
 
-								_text = format ["\nCannot wimp out during combat! (%1)", _time];
+								_text = format ["\nCannot pussy out during combat! (%1)", _time];
 							};
 
 							cutText [_text, "PLAIN DOWN"];
 							sleep 1;
 						};
 
+						_unconscious = player call _isUnconscious;
 						true call _enableButtons;
 						cutText ["", "PLAIN DOWN"];
 					}

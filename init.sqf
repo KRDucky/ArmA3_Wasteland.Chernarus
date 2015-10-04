@@ -28,6 +28,8 @@ if (isServer) then { X_Server = true };
 if (!isDedicated) then { X_Client = true };
 if (isNull player) then { X_JIP = true };
 
+//if(hasInterface) then{[] execVM "addons\statusBar\statusbar.sqf"};
+
 A3W_scriptThreads = [];
 
 [DEBUG] call compile preprocessFileLineNumbers "globalCompile.sqf";
@@ -43,7 +45,7 @@ if (!isDedicated) then
 	{
 		if (hasInterface) then // Normal player
 		{
-			9999 cutText ["Welcome to A3Wasteland, please wait for your client to initialize", "BLACK", 0.01];
+			9999 cutText ["Welcome to ACE3 A3Wasteland Chernarus, please wait for your client to initialize", "BLACK", 0.01];
 
 			waitUntil {!isNull player};
 			player setVariable ["playerSpawning", true, true];
@@ -83,9 +85,7 @@ if (hasInterface || isServer) then
 	[] execVM "addons\R3F_ARTY_AND_LOG\init.sqf";
 	[] execVM "addons\proving_ground\init.sqf";
 	[] execVM "addons\JumpMF\init.sqf";
-	[] execVM "addons\outlw_magRepack\MagRepack_init_sv.sqf";
-	[] execVM "addons\lsd_nvg\init.sqf";
-	[] execVM "addons\MeanY_3rd_fps\3rdrestriction.sqf"; //3rd person restrictions
-//	[] execVM "addons\disableThermal\disablethermal.sqf";  //disable thermal vision (call from client\init.sqf)
-	if (isNil "drn_DynamicWeather_MainThread") then { drn_DynamicWeather_MainThread = [] execVM "addons\scripts\DynamicWeatherEffects.sqf" };
+	//[] execVM "addons\outlw_magRepack\MagRepack_init.sqf"; ACE3 includes Mag Repack by default thus, Outlaw's script is not needed.
+	//[] execVM "addons\lsd_nvg\init.sqf";
+	//if (isNil "drn_DynamicWeather_MainThread") then { drn_DynamicWeather_MainThread = [] execVM "addons\scripts\DynamicWeatherEffects.sqf" };
 };

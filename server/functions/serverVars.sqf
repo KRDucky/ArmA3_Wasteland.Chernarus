@@ -103,20 +103,10 @@ objectList =
 	"Land_Canal_WallSmall_10m_F",
 	"Land_CncBarrierMedium4_F",
 	"Land_CncShelter_F",
-	"Land_Pod_Heli_Transport_04_ammo_F",
-	"Land_Pod_Heli_Transport_04_bench_F",
-	"Land_Pod_Heli_Transport_04_box_F",
-	"Land_Pod_Heli_Transport_04_covered_F",
 	"Land_Pod_Heli_Transport_04_fuel_F",
-	"Land_Pod_Heli_Transport_04_medevac_F",
 	"Land_Pod_Heli_Transport_04_repair_black_F",
-	"Land_Pod_Heli_Transport_04_ammo_black_F",
-	"Land_Pod_Heli_Transport_04_bench_black_F",
-	"Land_Pod_Heli_Transport_04_box_black_F",
-	"Land_Pod_Heli_Transport_04_covered_black_F",
 	"Land_Pod_Heli_Transport_04_fuel_black_F",
-	"Land_Pod_Heli_Transport_04_medevac_black_F",
-	"Land_Pod_Heli_Transport_04_repair_black_F",
+  "Land_Pod_Heli_Transport_04_repair_black_F",
 	"Land_CncWall4_F",
 	"Land_HBarrier_1_F",
 	"Land_Cargo40_blue_F",
@@ -189,9 +179,12 @@ staticHeliList =
 //Object List - Random Planes.
 staticPlaneList =
 [
-	"B_Plane_CAS_01_F",
-	"O_Plane_CAS_02_F",
-	"I_Plane_Fighter_03_CAS_F"
+	"GNT_C185F",
+	"GNT_C185T",
+	"sab_camel_blu_B",
+	"bwi_a3_at6b",
+	"bwi_a3_t6a_nta_1",
+	"bwi_a3_at6b_1"
 ];
 
 //Random Weapon List - Change this to what you want to spawn in cars.

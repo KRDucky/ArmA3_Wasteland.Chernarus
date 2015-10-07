@@ -67,7 +67,7 @@ class vehshopd
 			h = VehStoreTopBar_H;
 		};
 
-		/*
+
 		class PlayerMoneyText: w_RscText
 		{
 			idc = vehshop_money;
@@ -79,7 +79,7 @@ class vehshopd
 			w = 0.1126 * SZ_SCALE;
 			h = 0.0448 * SZ_SCALE;
 		};
-		*/
+		
 	};
 
 	class Controls
@@ -231,4 +231,3 @@ class vehshopd
 		*/
 	};
 };
-

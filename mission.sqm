@@ -124,6 +124,12 @@ class Mission
 		"ace_repair",
 		"ace_medical",
 		"cba_main",
+<<<<<<< HEAD
+=======
+		"gnt_c185",
+		"sab_Camel",
+		"bwi_a3_t6",
+>>>>>>> 9fba0dd37aa2d2d38878bc71e0b95de3851e40e5
 		"A3_Structures_F_EPC_Civ_Accessories",
 		"aia_chernarus_config"
 	};
@@ -2947,7 +2953,11 @@ class Mission
 	};
 	class Markers
 	{
+<<<<<<< HEAD
 		items=153;
+=======
+		items=143;
+>>>>>>> 9fba0dd37aa2d2d38878bc71e0b95de3851e40e5
 		class Item0
 		{
 			position[]={11979.954,19.544149,3826.3022};
@@ -4045,6 +4055,7 @@ class Mission
 			type="Empty";
 			colorName="ColorOrange";
 		};
+<<<<<<< HEAD
 		class Item143
 		{
 			position[]={4283.3682,339,10864.916};
@@ -4115,6 +4126,8 @@ class Mission
 			type="Empty";
 			colorName="ColorBrown";
 		};
+=======
+>>>>>>> 9fba0dd37aa2d2d38878bc71e0b95de3851e40e5
 	};
 };
 class Intro
